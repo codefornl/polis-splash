@@ -101,9 +101,12 @@ description: "Zijn testbewijzen de manier om de samenleving van het slot te hale
                   display: block;
                 }
                 iframe {
-                  display: none;
+                  width: 100%;
                 }
                 .zijbalk {
+                  position: absolute;
+                  left: 0;
+                  top: 0;
                   width: 100%;
                 }
                 .looptijd {
@@ -129,7 +132,11 @@ description: "Zijn testbewijzen de manier om de samenleving van het slot te hale
                     <p>Je ziet ook duidelijk over welke meningen iedereen het eens is.</p>
                     <p>En je ziet de verschillen tussen de groepen.</p>
                     <p>Als je meer meningen geeft verplaats jij je in de getoonde groepen.</p>
-                    <center><a style="display: none" class="polis-link" href="{{ page.polis-url }}"><button>STARTEN</button></a></center>
+                    <center>
+                      <a style="display: none" class="polis-link" href="#">
+                        <button onclick="document.getElementsByClassName('zijbalk')[0].style.display = 'none'">STARTEN</button>
+                      </a>
+                    </center>
                 </section>
                 <section class="looptijd" style="background: black; color: white">
                     <h1 style="color: {{ page.color }}">Dit gesprek loopt tot:</h1>
