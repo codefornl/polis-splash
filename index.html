@@ -1,12 +1,15 @@
 ---
 einddatum: 16 maart 2021, 24:00 uur
 color: '#52A3DA'
+polis-url: https://pol.is/8etxdypjnj
 ---
 <!DOCTYPE html>
 <html>
     <head>
         <meta name='viewport' content='width=320,initial-scale=1,user-scalable=0'>
         <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     </head>
     <body>
         <main class="container">
@@ -17,6 +20,17 @@ color: '#52A3DA'
                 overflow: hidden;
                 height: 100%;
                 font-family: Arial;
+              }
+              h1, h2 {
+                font-family: "Anton",sans-serif;
+              }
+              h1 {
+                font-size: 2.4em;
+                font-weight: 700;
+              }
+              h2 {
+                font-size: 1.8em;
+                font-weight: 500;
               }
               .container {
                 width: 100%;
@@ -39,6 +53,13 @@ color: '#52A3DA'
               section {
                 padding: 20px;
               }
+              .code-for-nl {
+                background: gray;
+                color: white;
+              }
+              .code-for-nl a {
+                color: white;
+              }
               @media only screen and (max-width: 768px) {
                 .container {
                   display: block;
@@ -54,10 +75,10 @@ color: '#52A3DA'
                 }
               }
             </style>
-            <iframe frameborder=0 src="https://pol.is/8etxdypjnj"></iframe>
+            <iframe frameborder=0 src="{{ page.polis-url }}"></iframe>
             <aside class="zijbalk">
                 <section>
-                    <h1><img src="" alt="Polis"></h1>
+                    <h1><img src="/assets/img/polis.png" style="width: 50%" alt="Polis"></h1>
                     <h2>1. Geef je mening</h2>
                     <p>Kies per stelling of je het er mee eens of oneens bent. Geen mening hebben kan ook.</p>
                     <p>Er zijn steeds nieuwe stellingen dus kom vaker terug!</p>
@@ -69,18 +90,18 @@ color: '#52A3DA'
                     <p>Je ziet ook duidelijk over welke meningen iedereen het eens is.</p>
                     <p>En je ziet de verschillen tussen de groepen.</p>
                     <p>Als je meer meningen geeft verplaats jij je in de getoonde groepen.</p>
-                    <a style="display: none" class="polis-link" href="https://pol.is/8etxdypjnj"><button>STARTEN</button></a>
+                    <a style="display: none" class="polis-link" href="{{ page.polis-url }}"><button>STARTEN</button></a>
                 </section>
                 <section style="background: black; color: white">
-                    <h1 style="font-size: 2em; color: {{ page.color }}">Dit gesprek loopt tot:</h1>
-                    <h2>{{ page.einddatum }}</h2>
+                    <h1 style="color: {{ page.color }}">Dit gesprek loopt tot:</h1>
+                    <h3>{{ page.einddatum }}</h3>
                 </section>
-                <section>
-                    <h1>CODE for NL</h1>
+                <section class="code-for-nl">
+                    <h1><img style="height: 80px; vertical-align: -22px;" src="https://assets.codefor.nl/code-for-nl/classic/logo.png">CODE for NL</h1>
                     <p>Code for NL is de Nederlandse gemeenschap van ontwikkelaars en ontwerpers die samenwerken aan een open, eerlijke, en inclusieve digitale overheid en samenleving.</p>
                     <p>Met Polis willen we laten zien dat online gesprekken niet polariserend hoeven te zijn. En dat technologie ook gemeenschappelijkheid en consensus kan ondersteunen.</p>
-                    <p>www.codefor.nl</p>
-                    <p>praatmee.codefor.nl</p>
+                    <p><a href="https://codefor.nl">www.codefor.nl</a></p>
+                    <p><a href="https://praatmee.codefor.nl">praatmee.codefor.nl</a></p>
                 </section>
             </aside>
         </main>
