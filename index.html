@@ -3,6 +3,7 @@ einddatum: 16 maart 2021, 24:00 uur
 color: '#52A3DA'
 polis-url: https://pol.is/8etxdypjnj
 title: "pol.is: geef je mening (door Code for NL)"
+description: "Zijn testbewijzen de manier om de samenleving van het slot te halen? Met Polis willen we laten zien dat online gesprekken niet polariserend hoeven te zijn. En dat technologie ook gemeenschappelijkheid en consensus kan ondersteunen."
 ---
 <!DOCTYPE html>
 <html>
@@ -31,6 +32,16 @@ title: "pol.is: geef je mening (door Code for NL)"
         <title>{{ page.title }}</title>
         <meta property="og:title" content="{{ page.title }}">
         <meta name="twitter:text:title" content="{{ page.title }}">
+
+        <!-- description -->  
+        <meta property="og:description"
+          content="{{ page.description }}">
+        <meta name="twitter:description"
+          content="{{ page.description }}">
+
+        <!-- preview image -->
+        <meta property="og:image" content="/assets/img/preview.png">
+        <meta name="twitter:image" content="/assets/img/preview.png">
     </head>
     <body>
         <main class="container">
