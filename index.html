@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-
+        <meta name='viewport' content='width=320,initial-scale=1,user-scalable=0'>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
     </head>
     <body>
         <main class="container">
@@ -34,6 +35,20 @@
               section {
                 padding: 20px;
               }
+              @media only screen and (max-width: 768px) {
+                .container {
+                  display: block;
+                }
+                iframe {
+                  display: none;
+                }
+                .zijbalk {
+                  width: 100%;
+                }
+                .polis-link {
+                  display: block !important;
+                }
+              }
             </style>
             <iframe frameborder=0 src="https://pol.is/8etxdypjnj"></iframe>
             <aside class="zijbalk">
@@ -50,6 +65,7 @@
                     <p>Je ziet ook duidelijk over welke meningen iedereen het eens is.</p>
                     <p>En je ziet de verschillen tussen de groepen.</p>
                     <p>Als je meer meningen geeft verplaats jij je in de getoonde groepen.</p>
+                    <a style="display: none" class="polis-link" href="https://pol.is/8etxdypjnj"><button>STARTEN</button></a>
                 </section>
                 <section style="background: black; color: white">
                     <h1>Dit gesprek loopt tot:</h1>
