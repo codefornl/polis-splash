@@ -2,6 +2,7 @@
 einddatum: 16 maart 2021, 24:00 uur
 color: '#52A3DA'
 polis-url: https://pol.is/8etxdypjnj
+title: "pol.is: geef je mening (door Code for NL)"
 ---
 <!DOCTYPE html>
 <html>
@@ -11,7 +12,25 @@ polis-url: https://pol.is/8etxdypjnj
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
 
-        <!-- SOCIAL MEDIA STUFF -->
+        <!-- shortcut icon -->
+        <link rel="image_src" href="https://assets.codefor.nl/code-for-nl/classic/logo.png" />
+        <link rel="shortcut icon" sizes="128x128" href="https://assets.codefor.nl/code-for-nl/classic/logo.png" />
+
+        <!-- type -->
+        <meta property="og:type" content="default">
+        <meta name="twitter:card" content="summary">
+
+        <!-- url -->
+        <meta property="og:url" content="https://gesprek.codefor.nl/">
+        <meta name="twitter:url" content="https://gesprek.codefor.nl/">
+
+         <!-- site name -->
+         <meta property="og:site_name" content="{{ page.title }}">
+
+        <!-- title -->
+        <title>{{ page.title }}</title>
+        <meta property="og:title" content="{{ page.title }}">
+        <meta name="twitter:text:title" content="{{ page.title }}">
     </head>
     <body>
         <main class="container">
