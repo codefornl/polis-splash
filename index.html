@@ -67,15 +67,10 @@ description: "Zijn testbewijzen de manier om de samenleving van het slot te hale
               .container {
                 width: 100%;
                 height: 100%;
-                display: flex;
-              }
-              iframe {
-                flex: 1;
-                height: 100%;
-                overflow: hidden;
+                display: block;
               }
               .zijbalk {
-                width: 400px;
+                width: 100%;
                 flex: 0 0 400px;
                 background: {{ page.color }};
                 color: black;
@@ -100,22 +95,12 @@ description: "Zijn testbewijzen de manier om de samenleving van het slot te hale
                 .container {
                   display: block;
                 }
-                iframe {
-                  display: none;
-                }
-                .zijbalk {
-                  width: 100%;
-                }
                 .looptijd {
                   text-align: center;
                 }
-                .polis-link {
-                  display: block !important;
-                }
               }
             </style>
-            <iframe frameborder=0 src="{{ page.polis-url }}"></iframe>
-            <aside class="zijbalk">
+            <div class="splash">
                 <section>
                     <h1><img src="/assets/img/polis.png" style="width: 50%" alt="Polis"></h1>
                     <h2>1. Geef je mening</h2>
@@ -130,7 +115,7 @@ description: "Zijn testbewijzen de manier om de samenleving van het slot te hale
                     <p>En je ziet de verschillen tussen de groepen.</p>
                     <p>Als je meer meningen geeft verplaats jij je in de getoonde groepen.</p>
                     <center>
-                      <a style="display: none" class="polis-link" href="{{ page.polis-url }}">
+                      <a class="polis-link" href="{{ page.polis-url }}">
                         <button>STARTEN</button>
                       </a>
                     </center>
@@ -146,7 +131,7 @@ description: "Zijn testbewijzen de manier om de samenleving van het slot te hale
                     <p><a href="https://codefor.nl">www.codefor.nl</a></p>
                     <p><a href="https://praatmee.codefor.nl">praatmee.codefor.nl</a></p>
                 </section>
-            </aside>
+            </div>
         </main>
     </body>
 </html>
