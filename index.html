@@ -50,7 +50,6 @@ description: "Zijn testbewijzen de manier om de samenleving van het slot te hale
               html, body {
                 margin: 0;
                 padding: 0;
-                overflow: hidden;
                 height: 100%;
                 font-family: Arial;
               }
@@ -67,21 +66,21 @@ description: "Zijn testbewijzen de manier om de samenleving van het slot te hale
               }
               .container {
                 width: 100%;
-                height: 100%;
                 display: flex;
               }
               .polis {
                 flex: 1;
-                height: 100%;
-                overflow: hidden;
+              }
+              .polis iframe {
+                border: 0 !important;
+                padding: 0 !important;
+                border-radius: 0 !important;
               }
               .zijbalk {
                 width: 400px;
                 flex: 0 0 400px;
                 background: {{ page.color }};
                 color: black;
-                height: 100%;
-                overflow: auto;
               }
               section {
                 padding: 20px;
