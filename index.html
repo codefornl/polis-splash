@@ -101,10 +101,15 @@ description: "Zijn testbewijzen de manier om de samenleving van het slot te hale
                   display: block;
                 }
                 .polis {
-                  display: none;
+                  width: 100%;
+                  overflow:scroll !important;
+                  -webkit-overflow-scrolling:touch !important;
                 }
                 .zijbalk {
                   width: 100%;
+                  position: absolute;
+                  left: 0;
+                  top: 0;
                 }
                 .looptijd {
                   text-align: center;
@@ -132,8 +137,8 @@ description: "Zijn testbewijzen de manier om de samenleving van het slot te hale
                     <p>En je ziet de verschillen tussen de groepen.</p>
                     <p>Als je meer meningen geeft verplaats jij je in de getoonde groepen.</p>
                     <center>
-                      <a style="display: none" class="polis-link" href="{{ page.polis-url }}">
-                        <button>STARTEN</button>
+                      <a style="display: none" class="polis-link" href="#">
+                        <button onclick="document.getElementsByClassName('zijbalk')[0].style.display = 'none'">STARTEN</button>
                       </a>
                     </center>
                 </section>
