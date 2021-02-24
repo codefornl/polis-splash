@@ -2,6 +2,7 @@
 einddatum: 16 maart 2021, 24:00 uur
 color: '#52A3DA'
 polis-url: https://pol.is/8etxdypjnj
+polis-conversation-id: 8etxdypjnj
 title: "pol.is: geef je mening (door Code for NL)"
 description: "Zijn testbewijzen de manier om de samenleving van het slot te halen? Met Polis willen we laten zien dat online gesprekken niet polariserend hoeven te zijn. En dat technologie ook gemeenschappelijkheid en consensus kan ondersteunen."
 ---
@@ -69,7 +70,7 @@ description: "Zijn testbewijzen de manier om de samenleving van het slot te hale
                 height: 100%;
                 display: flex;
               }
-              iframe {
+              .polis {
                 flex: 1;
                 height: 100%;
                 overflow: hidden;
@@ -100,7 +101,7 @@ description: "Zijn testbewijzen de manier om de samenleving van het slot te hale
                 .container {
                   display: block;
                 }
-                iframe {
+                .polis {
                   display: none;
                 }
                 .zijbalk {
@@ -114,7 +115,9 @@ description: "Zijn testbewijzen de manier om de samenleving van het slot te hale
                 }
               }
             </style>
-            <iframe frameborder=0 src="{{ page.polis-url }}"></iframe>
+            <div class='polis' data-conversation_id='{{ page.polis-conversation-id }}'></div>
+            <script async src='https://pol.is/embed.js'></script>
+            <!-- <iframe frameborder=0 src="{{ page.polis-url }}"></iframe> -->
             <aside class="zijbalk">
                 <section>
                     <h1><img src="/assets/img/polis.png" style="width: 50%" alt="Polis"></h1>
